@@ -6,9 +6,9 @@
 ## About the language
 
 > _Describe the language_
-> Scala is a language that combines object-oriented and functional programming into a concise, high level language.
-> It uses a strong statically typed system and is based on Java. However, it has a multitude of functions that are not
-> available within java.
+ Scala is a language that combines object-oriented and functional programming into a concise, high level language.
+ It uses a strong statically typed system and is based on Java. However, it has a multitude of functions that are not
+ available within java.
 > - History
 > - Some interesting features
 
