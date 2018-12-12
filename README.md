@@ -125,6 +125,35 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 ## About the tools
 
 > _Describe the compiler or interpreter needed_.
+   
+   ####Development environment
+   As previously mentioned, scala is a language that is based on Java. It runs on JVM and thus, Java 8 JDK or higher is required.
+   It can be ran in most operating systems such as Linux, Mac OS, and windows. Downloading instructions can be found in their official
+   website https://www.scala-lang.org/download/
+   
+   ####Compilation
+   To compile scala files using command line arguments, use the scalac argument:
+   >$ scalac (File name).scala
+   
+   To run scala files using command line arguments, use:
+   >$ scala (File name)
+   
+   ####Project structure
+   Scala project directory structures must abide by the following format:
+   
+   ```
+      - project (plugins and additional settings for sbt)
+      
+       - src (source files)
+           - main (application code)
+               - java (Java source files)
+               - scala (Scala source files) <-- This is all we need for now
+               - scala-2.12 (Scala 2.12 specific files)
+           - test (unit tests)
+           
+       - target (generated files)
+       - build.sbt (build definition file for sbt)
+   ```
 
 ## About the standard library
 
