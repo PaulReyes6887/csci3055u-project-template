@@ -126,19 +126,22 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 
 > _Describe the compiler or interpreter needed_.
    
-   ##Development environment
+   ## Development environment
+   
    As previously mentioned, scala is a language that is based on Java. It runs on JVM and thus, Java 8 JDK or higher is required.
    It can be ran in most operating systems such as Linux, Mac OS, and windows. Downloading instructions can be found in their official
    website https://www.scala-lang.org/download/
    
-   ##Compilation
+   ## Compilation
+   
    To compile scala files using command line arguments, use the scalac argument:
    >$ scalac (File name).scala
    
    To run scala files using command line arguments, use:
    >$ scala (File name)
    
-   ##Project structure
+   ## Project structure
+   
    Scala project directory structures must abide by the following format:
    
    ```
@@ -176,7 +179,7 @@ Some notable packages that is supported in scala are:
 > _Describe at least one contribution by the open source
 community written in the language._
 
-##ScalaFX
+## ScalaFX
 ScalaFX is an open source repository that provides a User Interface (UI) 
 Domain specific language (DSL) that is rooted in the JavaFX 2 and JavaFX 8 libraries.
 
