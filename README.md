@@ -26,14 +26,14 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 
 > _give some code snippet of the language_
 
-*Let form in clojure*
+#### Let form in clojure 
 
 ```clojure
 (let [x 10
       y 20]
   (+ x y))
 ```
-*"Let form" in scala*
+#### "Let form" in scala
 
 ```scala
     def foo :Int {
@@ -42,7 +42,7 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
     x + y
     }
 ```
-*Bindings and basic expressions*
+#### Bindings and basic expressions
 ```scala
     var x = 12
     val y: Int = (Int)(14 * 21.3)
@@ -51,8 +51,8 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
       //The 'y' used in the block refers to 'val y' outside of block
     var z = {val x = 19 / y; x * x}
 ```
-*Looping*
->While
+#### Looping
+##### While
 ```scala
     var i = 10
     while( i >= 0){
@@ -60,15 +60,15 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
       i -= 1
     }
 ```
->For
+##### For
 ```scala
     for(index <- 0 to 100){
     println("Value of index = " index)
     }
 ```
 
-*Data Structures*
->Class
+#### Data Structures
+##### Class
 ```scala
     class shape(val color: String, area: Double, perimeter: Double){
         val shapeColor = color
@@ -87,7 +87,7 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
         }
       }
 ```
->Maps
+##### Maps
 ```scala
     //immutable map (default)
     val immutableMap = Map("apple" -> 10,
@@ -104,7 +104,7 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
     mutableMap += ("orange" -> 6)
     println(mutableMap("orange"))
 ```
->Traits
+##### Traits
 ```scala
     //Code is from https://www.tutorialspoint.com/scala/scala_traits.htm
     //Uses obj.isInstanceOf[T] and obj.asInstanceOf[T] methods to compare 2
