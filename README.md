@@ -160,10 +160,28 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
 
+Scala supports a multitude of packages and libraries that allows you to create high-performance systems.
+
+A full list of the current scala standard library suit can be found here https://www.scala-lang.org/api/current/
+
+Some notable packages that is supported in scala are:
+
+    - The scala.collection package and its subsequent sub-packages      (Contains scala's collection framework)
+    - The scala.io package                                              (Input and output options)
+    - The scala.math package                                            (Fundamental Math operations like Math.sqrt and Math.abs)
+    - The scala.util.matching package                                   (RegEx)
+
 ## About open source library
 
 > _Describe at least one contribution by the open source
 community written in the language._
+
+####ScalaFX
+ScalaFX is an open source repository that provides a User Interface (UI) 
+Domain specific language (DSL) that is rooted in the JavaFX 2 and JavaFX 8 libraries.
+
+More information and documentation can be found in ScalaFX's official website http://www.scalafx.org/
+
 
 # Analysis of the language
 
