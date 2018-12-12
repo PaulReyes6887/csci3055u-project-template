@@ -250,3 +250,5 @@ it naturally supports are lazy programming, immutable data, and lambda calculus.
 As previously mentioned, scala uses a strong statically typed system - all variables and functions are statically typed.
 
 #### Pros and cons of the language
+Scala is a very powerful object-oriented language that supports both procedural and functional programming. Based on Java, it is easy to use and understand. Its interoperability with java
+programs and packages allows it to be used in a multitude of situations. However, it is still a developing language and thus, lacks both the common awareness and wide-spread use of other languages like python, Java, and C++.
