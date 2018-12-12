@@ -26,14 +26,101 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 
 > _give some code snippet of the language_
 
-*Let form*
+*Let form in clojure*
 
 ```clojure
 (let [x 10
       y 20]
   (+ x y))
 ```
+*"Let form" in scala*
 
+```scala
+    def foo :Int {
+    var x = 10
+    var y = 20
+    x + y
+    }
+```
+*Bindings and basic expressions*
+```scala
+    var x = 12
+    val y: Int = (Int)(14 * 21.3)
+    //Expression block (Uses Lexical scoping
+      //The value of 'x' within block is 19 / y 
+      //The 'y' used in the block refers to 'val y' outside of block
+    var z = {val x = 19 / y; x * x}
+```
+*Looping*
+>While
+```scala
+    var i = 10
+    while( i >= 0){
+      println(i)
+      i -= 1
+    }
+```
+>For
+```scala
+    for(index <- 0 to 100){
+    println("Value of index = " index)
+    }
+```
+
+*Data Structures*
+>Class
+```scala
+    class shape(val color: String, area: Double, perimeter: Double){
+        val shapeColor = color
+        var shapeArea = area
+        var shapePerimeter = perimeter
+        def printLook(): Unit ={
+          println("This shape is " + shapeColor + " with an area of " +
+            shapeArea + " and a perimeter of " = shapePerimeter)
+        }
+      }
+      //square class extends shape class
+      class square(color: String, sides: Double )
+        extends shape(color, sides*sides, 4 * sides){
+        def printSquare(): Unit ={
+          println("This is a " + color + " square with " + sides + " long sides")
+        }
+      }
+```
+>Maps
+```scala
+    //immutable map (default)
+    val immutableMap = Map("apple" -> 10,
+                           "orange" -> 12,
+                           "banana" -> 9
+                            )
+    val costOfApple = immutableMap("apple")
+    
+    //mutable map (must use scala.collection.mutable.Map
+    val mutableMap = scala.collection.mutable.Map("apple" -> 10,
+                                                  "orange" -> 12,
+                                                  "banana" -> 9)
+    println(mutableMap("orange"))
+    mutableMap += ("orange" -> 6)
+    println(mutableMap("orange"))
+```
+>Traits
+```scala
+    //Code is from https://www.tutorialspoint.com/scala/scala_traits.htm
+    //Uses obj.isInstanceOf[T] and obj.asInstanceOf[T] methods to compare 2
+      //values x and y 
+    trait Equal {
+       def isEqual(x: Any): Boolean
+       def isNotEqual(x: Any): Boolean = !isEqual(x)
+    }
+    
+    class Point(xc: Int, yc: Int) extends Equal {
+       var x: Int = xc
+       var y: Int = yc
+       
+       def isEqual(obj: Any) = obj.isInstanceOf[Point] && obj.asInstanceOf[Point].x == y
+    }
+```
 ## About the tools
 
 > _Describe the compiler or interpreter needed_.
