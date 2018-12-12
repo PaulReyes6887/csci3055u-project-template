@@ -121,6 +121,8 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
        def isEqual(obj: Any) = obj.isInstanceOf[Point] && obj.asInstanceOf[Point].x == y
     }
 ```
+
+
 ## About the tools
 
 > _Describe the compiler or interpreter needed_.
