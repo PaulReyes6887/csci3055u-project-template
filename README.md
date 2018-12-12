@@ -1,4 +1,4 @@
-# _Your project title_
+# _Analysis of Scala_
 
 - _Paul Reyes_
 - _paul.reyes@uoit.net_
@@ -190,5 +190,56 @@ More information and documentation can be found in ScalaFX's official website ht
 
 > _Organize your report according to the project description
 document_.
+
+#### Functional or Procedural?
+Scala is a programming language that is neither purely functional or procedural. It is a programming language that supports
+both types of programming styles. With an emphasis in object-oriented design mixed with functional programming support, scala
+can handle both types of programming paradigms in one concise, high-level language.
+
+#### Support of metaprogramming?
+As of Scala ver. 2.10.0, an official experimental support of metaprogramming, more specifically macros creation, has been published.
+ 
+_Prototypical macro definition listed in an article posted here https://docs.scala-lang.org/overviews/macros/overview.html_
+
+```scala
+def m(x: T): R = macro implRef
+```
+Details on the future of Scala's support on metaprogramming can be found here:
+
+
+#### Support for closure and symbol resolution?
+As you can see in this example
+```scala
+    println(foo)
+    
+    def foo: Unit = {
+      println("This is still unknown at this point: " + x)
+    }
+    
+    var x = "I am used even before i was created"
+    
+```
+```aidl
+    scala => This is still unknown at this point: I am used even before i was created
+```
+scala supports symbol resolution, in which unknown references are resolved at runtime.
+
+In this case, println(foo) uses foo as a parameter but foo has not been created as of the calling of the function println(foo) - this is resolved at runtime.
+
+#### Support of lexical and dynamic scoping
+As previously described in the bindings and basic expressions example...
+```scala
+    var x = 12
+    val y: Int = (Int)(14 * 21.3)
+    //Expression block (Uses Lexical scoping
+      //The value of 'x' within block is 19 / y 
+      //The 'y' used in the block refers to 'val y' outside of block
+    var z = {val x = 19 / y; x * x}
+```
+scala does support the use of lexical scoping. Variables within a block can reference values outside of the scope if it is not found within the block.
+In this case, the value of y within the block uses the value 298 (from the declaration outside the block).
+
+Scala does have dynamic scoping support, however programmers are not advised to use dynamic scoping rules as it makes it extremely hard to keep track
+on how their code will run during runtime.
 
 
