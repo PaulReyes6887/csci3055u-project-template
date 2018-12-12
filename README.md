@@ -24,8 +24,6 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 
 ## About the syntax
 
-> _give some code snippet of the language_
-
 #### Let form in clojure 
 
 ```clojure
@@ -123,8 +121,6 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 ```
 
 ## About the tools
-
-> _Describe the compiler or interpreter needed_.
    
    #### Development environment
    
@@ -160,9 +156,6 @@ programming concepts such as Lambda calculus, immutable data and "lazy" programm
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
-
 Scala supports a multitude of packages and libraries that allows you to create high-performance systems.
 
 A full list of the current scala standard library suit can be found here https://www.scala-lang.org/api/current/
@@ -176,9 +169,6 @@ Some notable packages that is supported in scala are:
 
 ## About open source library
 
-> _Describe at least one contribution by the open source
-community written in the language._
-
 #### ScalaFX
 ScalaFX is an open source repository that provides a User Interface (UI) 
 Domain specific language (DSL) that is rooted in the JavaFX 2 and JavaFX 8 libraries.
@@ -187,9 +177,6 @@ More information and documentation can be found in ScalaFX's official website ht
 
 
 # Analysis of the language
-
-> _Organize your report according to the project description
-document_.
 
 #### Functional or Procedural?
 Scala is a programming language that is neither purely functional or procedural. It is a programming language that supports
