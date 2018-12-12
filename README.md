@@ -19,7 +19,7 @@ Scala was created with an extensive support for functional programming and an ai
 
 > - Some interesting features
 
-Since its roots are based on both java and functional programming, Scala is a n object-oriented language which supports functional
+Since its roots are based on both java and functional programming, Scala is an object-oriented language which supports functional
 programming concepts such as Lambda calculus, immutable data and "lazy" programming.
 
 ## About the syntax
@@ -242,4 +242,11 @@ In this case, the value of y within the block uses the value 298 (from the decla
 Scala does have dynamic scoping support, however programmers are not advised to use dynamic scoping rules as it makes it extremely hard to keep track
 on how their code will run during runtime.
 
+#### Support of Functional programming constructs
+Scala does support many functional programming constructs as a core of its design. Some notable functional programming constructs
+it naturally supports are lazy programming, immutable data, and lambda calculus.
 
+#### Type system?
+As previously mentioned, scala uses a strong statically typed system - all variables and functions are statically typed.
+
+#### Pros and cons of the language
